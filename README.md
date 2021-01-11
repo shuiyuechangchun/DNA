@@ -42,13 +42,12 @@
 3. 虚拟机或实体机 Ubuntu 20.04 x86_64[x64]  推荐！！！
 
 
-####  **安装教程【PC版教程从第6条开始】** 
+####  **安装教程【PC版教程从第6条开始】以下每一行均为一条完整命令** 
 
 1.  手机安装原版[Termux.apk](https://f-droid.org/repo/com.termux_103.apk)  运行Termux 获取存储权限
     - `termux-setup-storage`
 
 2.  下载git、tar、proot【复制下面命令，在Termux中输入，回车】
-    - [Termux换国内清华源指南   可选  建议](https://mirrors.tuna.tsinghua.edu.cn/help/termux/)
     - `pkg install git tar proot -y`
 
 3.  下载ubuntu.tar.xz及安装脚本【复制下面命令，在Termux中输入，回车】    ---20201215 优先使用gitee，代替tsinghua镜像源，解决下载慢、出错等问题

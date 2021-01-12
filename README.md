@@ -26,7 +26,7 @@
 
 9.  加入插件功能，插件在工具中的相对路径：DNA/Insides/Errors/submodules文件夹   公测      ----2020.12.21
 
-10.  加入AIK(Android-Image-Kitchen)分解合成[boot|exaid|recovery/etc].img   公测      ----2021.01.09
+10.  加入AIK(Android-Image-Kitchen)分解合成[boot|exaid|recovery/etc].img, 需要java支持，已安装过的重新执行第6条教程    公测      ----2021.01.09
 
 11.  支持分解部分super.img(不支持动态AB双系统)，最新小米11super.img测试不支持    公测      ----2021.01.09
 
@@ -63,9 +63,9 @@
 
 6.  执行第5条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
     - `sudo apt update && sudo apt upgrade -y`        【 _必须执行_ 】
-    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils android-sdk-ext4-utils -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
+    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils android-sdk-ext4-utils openjdk-14-jdk -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
 
-    - ~`sudo apt install p7zip-full zip unzip gawk sed curl wget openjdk-14-jdk -y`~        [可选，非必需]
+    - ~`sudo apt install p7zip-full zip unzip gawk sed curl wget -y`~        [可选，非必需]
 
 7.  下载此工具【复制下面命令，终端中执行】
     - `git clone https://gitee.com/sharpeter/DNA.git`      【 **开放下载，所有可用功能完全免费** 】

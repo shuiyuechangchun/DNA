@@ -15,26 +15,26 @@ if platform.system() == 'Linux':
 	print("\033[1;32m\nRetrievaling ...\033[0m\n")
 	if os.path.isdir('Insides'):
 		if platform.machine() == 'x86_64':
-			if os.path.isfile('Insides/Linux/DNA'):
+			if os.path.isfile('Insides/Linux/dna'):
 				os.system("chmod -R 777 Insides/Linux")
 				if os.geteuid() != 0:
-					os.system("sudo ./Insides/Linux/DNA " + user)
+					os.system("sudo ./Insides/Linux/dna " + user)
 				else:
-					os.system("./Insides/Linux/DNA " + user)
+					os.system("./Insides/Linux/dna " + user)
 			else:
 				os.system("clear")
-				print("\033[1;33m\nThis program <DNA> had been lost. Aborting ...\033[0m\n")
+				print("\033[1;33m\nThis program <dna> had been lost. Aborting ...\033[0m\n")
 				sys.exit()
 		elif platform.machine() == 'aarch64':
-			if os.path.isfile('Insides/Droid/DNA'):
+			if os.path.isfile('Insides/Droid/dna'):
 				os.system("chmod -R 777 Insides/Droid")
 				if os.geteuid() != 0:
-					os.system("sudo ./Insides/Droid/DNA " + user)
+					os.system("sudo ./Insides/Droid/dna " + user)
 				else:
-					os.system("./Insides/Droid/DNA " + user)
+					os.system("./Insides/Droid/dna " + user)
 			else:
 				os.system("clear")
-				print("\033[1;33m\nThis program <DNA> had been lost. Aborting ...\033[0m\n")
+				print("\033[1;33m\nThis program <dna> had been lost. Aborting ...\033[0m\n")
 				sys.exit()
 		else:
 			os.system("clear")

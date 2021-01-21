@@ -11,7 +11,7 @@
 
 4.  支持安卓 [5.0+]  **【非动态分区、动态分区】** 打包，_由于没有动态机子，未进行刷入测试_    ----2020.12.20
     - 安卓 [5.0~8.1] 使用[ _make_ext4fs_ ]打包img !!!
-    - 安卓 [9.0+] 使用[ _mke2fs+e2fsdroid_ ]打包img !!!
+    - 安卓 [9.0+] 使用[ _mke2fs + e2fsdroid_ ]打包img !!!
     - 测试包Mi10Pro：[ _miui_CMI_20.12.10_a0bb9661ec_11.0.zip_ ](https://hugeota.d.miui.com/20.12.10/miui_CMI_20.12.10_a0bb9661ec_11.0.zip)   ----2020.12.20
 
 5.  支持合并分段*.dat.*，最大支持20个(1～20 看了几个vivo rom，通常为15个分段文件，多了影响解包速度)
@@ -31,6 +31,10 @@
 11.  支持分解部分super.img(不支持动态AB双系统)，最新小米11super.img测试不支持    公测      ----2021.01.09
 
 12.  修复部分动态分区size识别不准确问题！      ----2021.01.09
+
+13.  修复使用[ _make_ext4fs_ ]打包错误问题!      ----2021.01.21
+
+14.  打包过程加入静默模式(不询问，自动打包工程目录中所有可打包内容)      ----2021.01.21
 
 
 ####  **软件架构  同时支持** 
@@ -63,7 +67,7 @@
 
 6.  执行第5条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
     - `sudo apt update && sudo apt upgrade -y`        【 _必须执行_ 】
-    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils android-sdk-ext4-utils openjdk-14-jdk -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
+    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-14-jdk -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
 
     - ~`sudo apt install p7zip-full zip unzip gawk sed curl wget -y`~        [可选，非必需]
 
@@ -136,7 +140,10 @@ Credit:
 
 ####  **交流反馈** 
 
-1.  QQ群号：[578517063](https://jq.qq.com/?_wv=1027&k=3A2CRDjT)
+1.  QQ群2：[904865456](https://jq.qq.com/?_wv=1027&k=9izS4Ooz)
+
+    ~QQ群1：[578517063](https://jq.qq.com/?_wv=1027&k=3A2CRDjT)[已满]~
+
 2.  [酷安](https://www.coolapk.com/feed/23098694?shareKey=N2NjNjcwZWY5MDdmNWZiZjhhZmQ~&shareUid=1403335&shareFrom=com.coolapk.market_10.5.3
 )：[Errors](http://www.coolapk.com/u/1403335)
 

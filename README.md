@@ -4,6 +4,8 @@
 
 1.  全称：安卓一般固件解包打包助手【 **Droid Normal Assistant** 】 简称： **D.N.A** 
 
+     **如需在WIN10系统中（无需WSL子系统）对安卓11及动态分区ROM进行解包打包工具请戳这里：** [ **R.N.A** ](https://gitee.com/sharpeter/rna)
+
 2.  支持常见格式【 _*.zip, *.br, *.dat, *.dat.1~20, ext4/2 *.img, payload.bin, *.win000-004_ 】,只认后缀，任意名称！
 
 3.  支持安卓5.0+解包，支持安卓11 vendor.img 解包
@@ -106,6 +108,8 @@
 
 10.   **动态分区必须打包成原官方卡刷包格式[zip]（即打包成.new.dat.br或.new.dat，同时必须使用工程文件夹下的dynamic_partitions_op_list，一块压缩成zip卡刷包），不允许单刷.img** 
 
+11.  手机上使用工具时如果使用 **系统ROOT** 对工程目录下进行了操作(比如： **添加文件，修改文件**等。。。 )，请记得给操作过的文件或文件夹  **777**  满权！！！
+
 ####  **参与贡献** 
 
 Credit:
@@ -140,9 +144,11 @@ Credit:
 
 ####  **交流反馈** 
 
-1.  QQ群2：[904865456](https://jq.qq.com/?_wv=1027&k=9izS4Ooz)
+1.  QQ群1：[578517063](https://jq.qq.com/?_wv=1027&k=3A2CRDjT)
 
-    ~QQ群1：[578517063](https://jq.qq.com/?_wv=1027&k=3A2CRDjT)[已满]~
+    ~QQ群2：[904865456](https://jq.qq.com/?_wv=1027&k=9izS4Ooz)~
+
+    
 
 2.  [酷安](https://www.coolapk.com/feed/23098694?shareKey=N2NjNjcwZWY5MDdmNWZiZjhhZmQ~&shareUid=1403335&shareFrom=com.coolapk.market_10.5.3
 )：[Errors](http://www.coolapk.com/u/1403335)

@@ -25,7 +25,7 @@ if platform.system() == 'Linux':
 				os.system("clear")
 				print("\033[1;33m\nThis program <dna> had been lost. Aborting ...\033[0m\n")
 				sys.exit()
-		elif platform.machine() == 'aarch64':
+		elif platform.machine() == 'aarch64' or platform.machine() == 'armv8l':
 			if os.path.isfile('Insides/Droid/dna'):
 				os.system("chmod -R 777 Insides/Droid")
 				if os.geteuid() != 0:

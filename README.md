@@ -38,12 +38,14 @@
 
 14.  打包过程加入静默模式(不询问，自动打包工程目录中所有可打包内容)      ----2021.01.21
 
+15.  一键制作  插件改成安装模式       ----2021.02.28
+
 
 ####  **软件架构  同时支持** 
 
 1. 手机 Termux Proot Ubuntu 20.04 Arm64[aarch64]
 
-2. 电脑 Win10 Wsl2 Ubuntu 20.04 x86_64[x64]  WSL2效率较低，不推荐，除非你电脑配置很高！
+2. 电脑 Win10 Wsl/Wsl2 Ubuntu 20.04 x86_64[x64]  WSL2效率较低，不推荐，除非你电脑配置很高！
 
 3. 虚拟机或实体机 Ubuntu 20.04 x86_64[x64]  推荐！！！
 
@@ -56,30 +58,37 @@
 2.  下载git、tar、proot【复制下面命令，在Termux中输入，回车】
     - `pkg install git tar proot -y`
 
-3.  下载ubuntu.tar.xz及安装脚本【复制下面命令，在Termux中输入，回车】    ---20201215 优先使用gitee，代替tsinghua镜像源，解决下载慢、出错等问题
+3.  下载ubuntu.tar.xz及安装脚本【复制下面命令，在Termux中输入，回车】
+    - 【 **方法1** 】：可能下载太慢
     - `git clone https://gitee.com/sharpeter/proot-ubuntu`
 
-4.  执行【复制下面命令，在Termux中输入，回车】
     - `bash proot-ubuntu/install_ubuntu.sh`
+
+    - 【 **方法2** 】：使用清华源链接，默认下载最新版
+
+    - `wget https://gitee.com/sharpeter/proot-ubuntu/raw/master/install_ubuntu.sh`
+
+    - `bash install_ubuntu.sh`
+
     - 【 **注意** 】等待下载、解压完成
 
-5.  执行启动ubuntu 20.04【复制下面命令，在Termux中输入，回车】
+4.  执行启动ubuntu 20.04【复制下面命令，在Termux中输入，回车】
     - `ubuntu`
     - 【 **注意** 】  很多人说这里输进去没反应，注意看  ~ 变成 root@localhost 就说明 ubuntu 已经启动了 ，如果报错了就 【 `rm -rf ubnutu` 】 再从第3步开始！！！
 
-6.  执行第5条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
+5.  执行第5条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
     - `sudo apt update && sudo apt upgrade -y`        【 _必须执行_ 】
     - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-14-jdk -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
 
     - ~`sudo apt install p7zip-full zip unzip gawk sed curl wget -y`~        [可选，非必需]
 
-7.  下载此工具【复制下面命令，终端中执行】
+6.  下载此工具【复制下面命令，终端中执行】
     - `git clone https://gitee.com/sharpeter/DNA.git`      【 **开放下载，所有可用功能完全免费** 】
 
-8.  下载完成后执行【复制下面命令，终端中执行】
+7.  下载完成后执行【复制下面命令，终端中执行】
     - `cd DNA && python3 run.py`
 
-9.  至此你已启动此工具，教程结束 !
+8.  至此你已启动此工具，教程结束 !
     - 1.  今后每次启动只需打开Termux 输入【 `ubuntu` 】就可直接启动工具（工具存在时）
     - 2.  如果你想打开Termux就直接启动工具： 在Termux(不是在proot ubuntu中，建议重启termux再执行)中执行【  _`echo -e "if [ -d ubuntu ] && [ $(command -v ubuntu) ]; then\n\tubuntu\nfi" >> .bashrc`_  】
            然后重新启动Termux就可以直接启动工具（工具存在时）

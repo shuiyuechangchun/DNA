@@ -1,0 +1,27 @@
+#手机安装原版Termux.apk 运行Termux 获取存储权限
+
+termux-setup-storage
+
+apt-get update && apt-get upgrade -y
+
+pkg install git tar proot -y
+
+#以下两行2选1
+1. 
+git clone https://gitee.com/sharpeter/proot-ubuntu && bash proot-ubuntu/install_ubuntu.sh
+2. 
+wget https://gitee.com/sharpeter/proot-ubuntu/raw/master/install_ubuntu.sh && bash install_ubuntu.sh
+#以上两行2选1
+
+ubuntu
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-14-jdk -y
+
+git clone https://gitee.com/sharpeter/DNA.git
+
+#以上就是安装过程
+
+cd DNA && python3 run.py
+#执行这句开始使用(今后只需打开Termux  键入ubuntu 回车都会自动启动工具（工具存在时)

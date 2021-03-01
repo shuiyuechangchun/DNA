@@ -38,16 +38,16 @@
 
 14.  打包过程加入静默模式(不询问，自动打包工程目录中所有可打包内容)      ----2021.01.21
 
-15.  一键制作  插件改成安装模式       ----2021.02.28
+15.  一键制作  插件改成安装模式    利用7z压缩 需重新安装依赖      ----2021.02.28
 
 
 ####  **软件架构  同时支持** 
 
-1. 手机 Termux Proot Ubuntu 20.04 Arm64[aarch64]
+1. 手机 Termux Proot Ubuntu 20.04及以上版本 Arm64[aarch64] 或者 <Linux Deploy> Chroot Ubuntu 20.04及以上版本 Arm64[aarch64] 【推荐chroot，效率更高】
 
-2. 电脑 Win10 Wsl/Wsl2 Ubuntu 20.04 x86_64[x64]  WSL2效率较低，不推荐，除非你电脑配置很高！
+2. 电脑 Win10 Wsl/Wsl2 Ubuntu 20.04及以上版本 x86_64[x64]  WSL2效率较低，不推荐，除非你电脑配置很高！
 
-3. 虚拟机或实体机 Ubuntu 20.04 x86_64[x64]  推荐！！！
+3. 虚拟机或实体机 Ubuntu 20.04及以上版本 x86_64[x64]  推荐！！！
 
 
 ####  **安装教程【PC版教程从第6条开始】以下每一行均为一条完整命令** 
@@ -78,9 +78,9 @@
 
 5.  执行第5条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
     - `sudo apt update && sudo apt upgrade -y`        【 _必须执行_ 】
-    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-14-jdk -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
+    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-14-jdk p7zip-full -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
 
-    - ~`sudo apt install p7zip-full zip unzip gawk sed curl wget -y`~        [可选，非必需]
+    - ~`sudo apt install zip unzip gawk sed curl wget -y`~        [可选，非必需]
 
 6.  下载此工具【复制下面命令，终端中执行】
     - `git clone https://gitee.com/sharpeter/DNA.git`      【 **开放下载，所有可用功能完全免费** 】

@@ -16,7 +16,7 @@ if platform.system() == 'Linux':
 	if os.path.isdir('Insides'):
 		if platform.machine() == 'x86_64':
 			if os.path.isfile('Insides/Linux/dna'):
-				os.system("chmod -R 777 Insides/Linux 2>&1 >/dev/null")
+				os.system("chmod -R 777 Insides/Linux")
 				if os.geteuid() != 0:
 					os.system("sudo ./Insides/Linux/dna " + user)
 				else:
@@ -27,7 +27,7 @@ if platform.system() == 'Linux':
 				sys.exit()
 		elif platform.machine() == 'aarch64' or platform.machine() == 'armv8l':
 			if os.path.isfile('Insides/Droid/dna'):
-				os.system("chmod -R 777 Insides/Droid 2>&1 >/dev/null")
+				os.system("chmod -R 777 Insides/Droid")
 				if os.geteuid() != 0:
 					os.system("sudo ./Insides/Droid/dna " + user)
 				else:

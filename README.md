@@ -48,21 +48,21 @@
 3. 虚拟机或实体机 Ubuntu 20.04及以上版本 x86_64[x64]  推荐！！！
 
 
-####  **安装教程【PC版教程从第6条开始】以下每一行均为一条完整命令** 
+####  **安装教程【PC版教程从第5条开始】以下每一行均为一条完整命令** 
 
-1.  手机安装原版[Termux.apk](https://f-droid.org/repo/com.termux_103.apk)  运行Termux 获取存储权限
+1.  手机安装原版[Termux.apk](https://search.f-droid.org/?q=termux&lang=zh_Hans)  运行Termux 获取存储权限
     - `termux-setup-storage`
 
 2.  下载git、tar、proot【复制下面命令，在Termux中输入，回车】
-    - `pkg install git tar proot -y`
+    - `pkg install git tar proot wget -y`
 
 3.  下载ubuntu.tar.xz及安装脚本【复制下面命令，在Termux中输入，回车】
     - 【 **方法1** 】：可能下载太慢
-    - `git clone https://gitee.com/sharpeter/proot-ubuntu`
+    - `git clone https://gitee.com/sharpeter/proot-ubuntu --depth 1`
 
     - `bash proot-ubuntu/install_ubuntu.sh`
 
-    - 【 **方法2** 】：使用清华源链接，默认下载最新版
+    - 【 **方法2** 】：使用清华源链接，默认下载最新版，速度理论上不错！
 
     - `wget https://gitee.com/sharpeter/proot-ubuntu/raw/master/install_ubuntu.sh`
 
@@ -74,14 +74,14 @@
     - `ubuntu`
     - 【 **注意** 】  很多人说这里输进去没反应，注意看  ~ 变成 root@localhost 就说明 ubuntu 已经启动了 ，如果报错了就 【 `rm -rf ubnutu` 】 再从第3步开始！！！
 
-5.  执行第5条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
+5.  执行第4条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
     - `sudo apt update && sudo apt upgrade -y`        【 _必须执行_ 】
-    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-14-jdk p7zip-full -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
+    - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-11-jre p7zip-full -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
 
     - ~`sudo apt install zip unzip gawk sed curl wget -y`~        [可选，非必需]
 
 6.  下载此工具【复制下面命令，终端中执行】
-    - `git clone https://gitee.com/sharpeter/DNA.git`      【 **开放下载，所有可用功能完全免费** 】
+    - `git clone https://gitee.com/sharpeter/DNA.git --depth 1`      【 **开放下载，所有可用功能完全免费** 】
 
 7.  下载完成后执行【复制下面命令，终端中执行】
     - `cd DNA && python3 run.py`
@@ -111,7 +111,7 @@
 
 8.   **不要放在含有中文名文件夹下运行，不要选择带有空格的文件进行解包，工程文件夹不得有空格或其他特殊符号 ！！！** 
 
-9.  更新说明: 在proot ubuntu下删除原 DNA文件夹（记得提前备份DNA文件夹内的重要文件/插件），重新【 _`git clone https://gitee.com/sharpeter/DNA.git`_  】
+9.  更新说明: 在proot ubuntu下删除原 DNA文件夹（记得提前备份DNA文件夹内的重要文件/插件），重新【 _`git clone https://gitee.com/sharpeter/DNA.git --depth 1`_  】
 
 10.   **动态分区必须打包成原官方卡刷包格式[zip]（即打包成.new.dat.br或.new.dat，同时必须使用工程文件夹下的dynamic_partitions_op_list，一块压缩成zip卡刷包），不允许单刷.img** 
 

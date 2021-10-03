@@ -75,7 +75,7 @@
     - 【 **注意** 】  很多人说这里输进去没反应，注意看  ~ 变成 root@localhost 就说明 ubuntu 已经启动了 ，如果报错了就 【 `rm -rf ubnutu` 】 再从第3步开始！！！
 
 5.  执行第4条后进入ubuntu系统   【 **PC版教程从此开始，手机端继续往下** 】    【复制下面命令，终端中执行】
-    - `sudo apt update && sudo apt upgrade -y`        【 _必须执行_ 】
+    - `sudo apt update && sudo apt upgrade -y`        【 _必须执行，近期这一步出错是因为清华源抽风，执行mv -f /etc/apt/sources.list.bak /etc/apt/sources.list后再执行这一步，网速慢科学上网_ 】
     - `sudo apt install git cpio aria2 brotli android-sdk-libsparse-utils openjdk-11-jre p7zip-full -y`     【 _必须执行，使用新版本前建议重新安装一次_ 】
 
     - ~`sudo apt install zip unzip gawk sed curl wget -y`~        [可选，非必需]

@@ -49,6 +49,9 @@
 
 
 ####  **安装教程【PC版教程从第5条开始】以下每一行均为一条完整命令** 
+####  手机上一条命令安装D.N.A：打开Termux复制粘贴
+bash <(curl -s https://gitee.com/sharpeter/proot-ubuntu/raw/master/onekey_install_dna.sh) 
+回车即可一键安装D.N.A工具啦！！！
 
 1.  手机安装原版[Termux.apk](https://search.f-droid.org/?q=termux&lang=zh_Hans)  运行Termux 获取存储权限
     - `termux-setup-storage`

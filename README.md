@@ -1,8 +1,6 @@
 #  **D.N.A** 
 
-####  **测试版DNA2已发布**
-
-
+####  **测试版DNA2已发布
 一键安装，复制一下命令到Termux中执行
 bash <(curl -s https://gitee.com/sharpeter/proot-ubuntu/raw/master/onekey_install_dna.sh)**
 ####  **介绍** 

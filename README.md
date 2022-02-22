@@ -1,5 +1,10 @@
 #  **D.N.A** 
 
+####  **测试版DNA2已发布**
+
+
+一键安装，复制一下命令到Termux中执行
+bash <(curl -s https://gitee.com/sharpeter/proot-ubuntu/raw/master/onekey_install_dna.sh)**
 ####  **介绍** 
 
 1.  全称：安卓一般固件解包打包助手【 **Droid Normal Assistant** 】 简称： **D.N.A** 
@@ -83,7 +88,8 @@
     - ~`sudo apt install zip unzip gawk sed curl wget -y`~        [可选，非必需]
 
 6.  下载此工具【复制下面命令，终端中执行】
-    - `git clone https://gitee.com/sharpeter/DNA.git --depth 1`      【 **开放下载，所有可用功能完全免费** 】
+    - `git clone https://gitee.com/sharpeter/DNA.git --depth 1`      【 **开放下载，所有可用功能完全免费，限制使用状态** 】
+    - `git clone https://gitee.com/sharpeter/DNA2 -b feature --depth 1`    【**最新DNA2公测**】
 
 7.  下载完成后执行【复制下面命令，终端中执行】
     - `cd DNA && python3 run.py`
@@ -131,7 +137,7 @@ Credit:
 6.  Cubi    @ Github: [ext4.py](https://github.com/cubinator/ext4)
 7.  Gregory @ Github: [extract_android_ota_payload.py & update_metadata_pb2.py](https://github.com/cyxx/extract_android_ota_payload)
 8.  Sergey  @ Github (unix3dgforce@MiuiPro.by DEV Team): [BatchApkTool UnpackerFirmware](https://github.com/unix3dgforce) & [lpunpack.py](https://github.com/unix3dgforce/lpunpack)
-
+9.  aarch64/x86_64 [mkfs.erofs & erofsUnpackRust from 丧](https://github.com/thka2016)
 
 ####  **工具预览** 
 
